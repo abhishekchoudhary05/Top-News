@@ -18,7 +18,7 @@ function getNews(){
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="true" aria-controls="collapse${index}">${element.title}</button>
       </h2>
       <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#newsList">
-        <div class="accordion-body">${element.content}</div>
+        <div class="accordion-body">${element.content} <a href='${element.url}' target="_blank">Click here for More Information</a> </div>
       </div>
       </div>`;      
     });
